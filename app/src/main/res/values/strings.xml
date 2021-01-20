@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Plot Tests</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android plot tests</string>
+    <string name="nav_header_subtitle">a.v.korovin73@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_functionplot">MP chart plot test</string>
+    <string name="menu_anychart">Any chart test</string>
+    <string name="menu_sensor">Sensors</string>
+    <string name="textview">Start measure sensor data</string>
+    <string name="mesure_sensor">Single sensor measurement</string>
+    <string name="switch_to_continious_measurement">Switch to continuous measurement</string>
+    <string name="plot_mp_cart">plot function, f(x)</string>
+    <string name="input_function">x^3+exp(x)</string>
+    <string name="input_expression_for_function">Input expression for function</string>
+
+</resources>

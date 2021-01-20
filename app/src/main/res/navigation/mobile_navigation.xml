@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_functionplot">
+
+    <fragment
+        android:id="@+id/nav_functionplot"
+        android:name="com.example.plottests.ui.fuctionplot.FunctionPlotFragment"
+        android:label="@string/menu_functionplot"
+        tools:layout="@layout/fragment_functionplot" />
+
+    <fragment
+        android:id="@+id/nav_anychart"
+        android:name="com.example.plottests.ui.anychart.AnyChartFragment"
+        android:label="@string/menu_anychart"
+        tools:layout="@layout/fragment_anychart" />
+
+    <fragment
+        android:id="@+id/nav_sensors"
+        android:name="com.example.plottests.ui.sensors.SensorsFragment"
+        android:label="@string/menu_sensor"
+        tools:layout="@layout/fragment_sensors" />
+</navigation>

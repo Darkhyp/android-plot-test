@@ -1,0 +1,13 @@
+#Wed Jan 20 22:25:09 CET 2021
+path.3=classes4.dex
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.3=D\:\\Korovin\\work\\Education\\Android\\AndroidStudioProjects\\PlotTests\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes4.dex
+base.2=D\:\\Korovin\\work\\Education\\Android\\AndroidStudioProjects\\PlotTests\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
+base.1=D\:\\Korovin\\work\\Education\\Android\\AndroidStudioProjects\\PlotTests\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+base.0=D\:\\Korovin\\work\\Education\\Android\\AndroidStudioProjects\\PlotTests\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex

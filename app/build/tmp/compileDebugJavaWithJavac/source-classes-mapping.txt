@@ -1,0 +1,19 @@
+com/example/plottests/ui/sensors/SensorsFragment.java
+ com.example.plottests.ui.sensors.SensorsFragment
+ com.example.plottests.ui.sensors.SensorsFragment$1
+ com.example.plottests.ui.sensors.SensorsFragment$2
+ com.example.plottests.ui.sensors.SensorsFragment$3
+ com.example.plottests.ui.sensors.SensorsFragment$4
+ com.example.plottests.ui.sensors.SensorsFragment$5
+ com.example.plottests.ui.sensors.SensorsFragment$6
+com/example/plottests/ui/anychart/AnyChartFragment.java
+ com.example.plottests.ui.anychart.AnyChartFragment
+ com.example.plottests.ui.anychart.AnyChartFragment$CustomDataEntry
+com/example/plottests/BuildConfig.java
+ com.example.plottests.BuildConfig
+com/example/plottests/MainActivity.java
+ com.example.plottests.MainActivity
+com/example/plottests/ui/fuctionplot/FunctionPlotFragment.java
+ com.example.plottests.ui.fuctionplot.FunctionPlotFragment
+ com.example.plottests.ui.fuctionplot.FunctionPlotFragment$1
+ com.example.plottests.ui.fuctionplot.FunctionPlotFragment$2

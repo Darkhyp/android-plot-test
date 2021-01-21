@@ -146,6 +146,7 @@ public class SensorsFragment extends Fragment implements SensorEventListener {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(context,parent.getItemAtPosition(position)+" is selected",Toast.LENGTH_SHORT).show();
+                data.clearValues();
                 initSensor(context, sensorsList.get(position));
             }
 
@@ -158,6 +159,7 @@ public class SensorsFragment extends Fragment implements SensorEventListener {
     private void initSensor(Context context, @NotNull Sensor sensor) {
         mSensor = mSensorManager.getDefaultSensor(sensor.getType());
         if(mSensor !=null){
+            mSensorManager.unregisterListener(this);
             mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
         }
     }
@@ -188,8 +190,8 @@ public class SensorsFragment extends Fragment implements SensorEventListener {
     @Override
     public void onResume() {
         super.onResume();
-
-        mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
+        if(mSensor!=null)
+            mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
@@ -247,11 +249,14 @@ public class SensorsFragment extends Fragment implements SensorEventListener {
         if(data!=null){
             numberOfMeasuredPoints++;
             for (int dataSeries = 0; dataSeries < 3; dataSeries++) {
-                ILineDataSet set = addDataSet(dataSeries);
-                if(set.getEntryCount()>MAX_POINTS_DISPLAYED)
-                    set.removeFirst();
-                data.addEntry(new Entry(numberOfMeasuredPoints, event.values[dataSeries]), dataSeries);
+                try {
+                    ILineDataSet set = addDataSet(dataSeries);
+                    if (set.getEntryCount() > MAX_POINTS_DISPLAYED)
+                        set.removeFirst();
+                    data.addEntry(new Entry(numberOfMeasuredPoints, event.values[dataSeries]), dataSeries);
 //                    data.addXValue(String.valueOf(System.currentTimeMillis()));
+                }
+                catch (Exception e){}
             }
             data.notifyDataChanged();
             lineChart.moveViewToX(data.getEntryCount());

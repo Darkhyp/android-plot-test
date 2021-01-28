@@ -16,7 +16,7 @@ Real time data plot using smartphone sensors in MPAndroidChart.
 
 Test of Camera.
 
-<img src="screen4.jpg" width=200px>
+<img src="sreen4.jpg" width=200px>
 
 
 # Author Alexander V. Korovin [a.v.korovin73@gmail.com]
